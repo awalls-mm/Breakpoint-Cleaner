@@ -1,6 +1,8 @@
 body, html {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 html {
     background: linear-gradient(#A5C9BC, #D1FFEE, white);
