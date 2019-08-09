@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Breakpoint Sorter</h1>
+        <form id="strip-form">
+            <div class="box-box query-box">
+                <p>Enter a media query to search for (e.g., <span class="mono">@media only screen and (min-width: 768px)</span>):</p>
+                <div class="query-input">
+                        <label for="query">Query:</label>
+                        <input type="text" name="query" id="query" />
+                </div>
+            </div>
+            <div class="box-box">
+                <div class="input-box textarea-box">
+                    <label for="css-input">Enter the raw CSS to search:</label>
+                    <textarea name="css-input" id="css-input" cols="100" rows="40"></textarea>
+                    <button type="submit">Submit</button>
+                </div>
+                <div class="output-box textarea-box">
+                    <label for="css-input-chaff">The original CSS, stripped of styles for the provided breakpoint.</label>
+                    <textarea name="css-output-chaff" id="css-output-chaff" cols="100" rows="20" readonly></textarea>
+                    <label for="css-input-wheat">The styles from the provided breakpoint.</label>
+                    <textarea name="css-output-wheat" id="css-output-wheat" cols="100" rows="20" readonly></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

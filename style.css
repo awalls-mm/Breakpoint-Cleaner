@@ -1,0 +1,33 @@
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mono {
+    font-family: 'Courier New', Courier, monospace;
+}
+.container {
+    width: 1200px;
+    max-width: 70%;
+    margin: 0 auto;
+}
+.box-box {
+    display: flex;
+}
+.query-box {
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.textarea-box {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.textarea-box textarea {
+    width: 100%;
+}
+#css-output-chaff {
+    margin-bottom: 20px;
+}
+#query {
+    width: 60%;
+    margin-left: 40px;
+}
