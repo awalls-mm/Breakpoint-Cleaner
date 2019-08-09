@@ -1,5 +1,37 @@
 body, html {
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+html {
+    background: linear-gradient(#A5C9BC, #D1FFEE, white);
+    background-attachment: fixed;
+}
+label {
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+textarea {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+hr {
+    border : 0;
+    height : 3px;
+    background : #738C83;
+    margin : 1em 0;
+}
+button {
+    background: #738C83;
+    border: none;
+    color: white;
+    padding: 5px 7px;
+}
+button:active {
+    background: #495953;
+}
+button:hover {
+    background: #52635D;
 }
 .mono {
     font-family: 'Courier New', Courier, monospace;
@@ -11,18 +43,27 @@ body, html {
 }
 .box-box {
     display: flex;
+    padding: 20px;
+    box-sizing: border-box;
 }
-.query-box {
+.instruction-box {
     flex-direction: column;
+    margin-bottom: 20px;
+}
+.query-input {
     margin-bottom: 20px;
 }
 .textarea-box {
     width: 50%;
+    height: 70vh;
     box-sizing: border-box;
     padding: 0 10px;
 }
-.textarea-box textarea {
-    width: 100%;
+.input-box textarea {
+    height: 80%;
+}
+.output-box textarea {
+    height: 35%;
 }
 #css-output-chaff {
     margin-bottom: 20px;

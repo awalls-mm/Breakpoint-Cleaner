@@ -12,26 +12,29 @@
 <body>
     <div class="container">
         <h1>Breakpoint Cleaner 🧹</h1>
+        <hr />
         <form id="strip-form">
-            <div class="box-box query-box">
+            <div class="box-box instruction-box">
                 <p>This is a pretty simple tool. It'll only work with well-formed CSS. Please double-check the results before using them in production!</p>
                 <p>Enter a media query to search for (e.g., <span class="mono">@media only screen and (min-width: 768px)</span>):</p>
-                <div class="query-input">
-                        <label for="query">Query:</label>
-                        <input type="text" name="query" id="query" required />
-                </div>
+                
             </div>
+            <hr />
             <div class="box-box">
                 <div class="input-box textarea-box">
+                    <div class="query-input">
+                            <label for="query">Query:</label>
+                            <input type="text" name="query" id="query" required />
+                    </div>
                     <label for="css-input">Enter the raw CSS to search:</label>
-                    <textarea name="css-input" id="css-input" cols="100" rows="40" required ></textarea>
+                    <textarea name="css-input" id="css-input" required ></textarea>
                     <button type="submit">Submit</button>
                 </div>
                 <div class="output-box textarea-box">
                     <label for="css-input-chaff">The original CSS, stripped of styles for the provided breakpoint.</label>
-                    <textarea name="css-output-chaff" id="css-output-chaff" cols="100" rows="20" readonly></textarea>
+                    <textarea name="css-output-chaff" id="css-output-chaff" readonly></textarea>
                     <label for="css-input-wheat">The styles from the provided breakpoint.</label>
-                    <textarea name="css-output-wheat" id="css-output-wheat" cols="100" rows="20" readonly></textarea>
+                    <textarea name="css-output-wheat" id="css-output-wheat" readonly></textarea>
                 </div>
             </div>
         </form>
